@@ -10,6 +10,9 @@ namespace ClientTCPApp
 {
    public class ClientCode
     {
+
+        private String[] messagequeue;
+
         public class StateObject
         {
             // Client socket.  
@@ -120,10 +123,12 @@ namespace ClientTCPApp
                     // Begin receiving the data from the remote device.  
                     client.BeginReceive(state.buffer, 0, StateObject.BufferSize, 0,
                         new AsyncCallback(ReceiveCallback), state);
+
+                    Logger.SaveLog("Got data from server: " );
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e.ToString());
+                    Logger.SaveLog("Error: " + e.ToString());
                 }
             }
 

@@ -40,6 +40,7 @@
             this.labelNick = new System.Windows.Forms.Label();
             this.labelConnSt = new System.Windows.Forms.Label();
             this.buttonDisconnect = new System.Windows.Forms.Button();
+            this.listViewUsers = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // textBoxIP
@@ -91,6 +92,7 @@
             this.buttonSend.TabIndex = 5;
             this.buttonSend.Text = "Send";
             this.buttonSend.UseVisualStyleBackColor = true;
+            this.buttonSend.Click += new System.EventHandler(this.buttonSend_Click);
             // 
             // textBoxNick
             // 
@@ -145,11 +147,20 @@
             this.buttonDisconnect.UseVisualStyleBackColor = true;
             this.buttonDisconnect.Click += new System.EventHandler(this.buttonDisconnect_Click);
             // 
+            // listViewUsers
+            // 
+            this.listViewUsers.Location = new System.Drawing.Point(667, 113);
+            this.listViewUsers.Name = "listViewUsers";
+            this.listViewUsers.Size = new System.Drawing.Size(121, 229);
+            this.listViewUsers.TabIndex = 12;
+            this.listViewUsers.UseCompatibleStateImageBehavior = false;
+            // 
             // ClientWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listViewUsers);
             this.Controls.Add(this.buttonDisconnect);
             this.Controls.Add(this.labelConnSt);
             this.Controls.Add(this.labelNick);
@@ -183,6 +194,7 @@
         private System.Windows.Forms.Label labelConnSt;
         public System.Windows.Forms.RichTextBox richTextBoxChat;
         private System.Windows.Forms.Button buttonDisconnect;
+        private System.Windows.Forms.ListView listViewUsers;
     }
 }
 

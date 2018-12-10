@@ -16,6 +16,8 @@ namespace ClientTCPApp
             InitializeComponent();
         }
 
+        
+
         private void buttonConnect_Click(object sender, EventArgs e)
         {
             Program.ConnectionData.IP = textBoxIP.Text;
@@ -50,15 +52,15 @@ namespace ClientTCPApp
 
         }
 
-        public void X()
-        {
-            richTextBoxChat.Text = "ASD";
-        }
-
         private void buttonDisconnect_Click(object sender, EventArgs e)
         {
             // ClientCode.AsynchronousClient.Disconnect();
             labelConnSt.Text = "Disonnected";
+        }
+
+        private void buttonSend_Click(object sender, EventArgs e)
+        {
+            string message = richTextBoxMessage.Text;           
         }
     }
 }

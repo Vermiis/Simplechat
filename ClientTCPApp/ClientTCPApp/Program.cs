@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -22,7 +23,8 @@ namespace ClientTCPApp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new ClientWindow());
-            
+            Thread ClientThread = new Thread(ClientCode.AsynchronousClient.Start);
+
         }
     }
 }
