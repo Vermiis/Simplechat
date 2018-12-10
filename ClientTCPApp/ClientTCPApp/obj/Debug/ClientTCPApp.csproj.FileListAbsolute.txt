@@ -1,0 +1,10 @@
+c:\users\ewelina\source\repos\ClientTCPApp\ClientTCPApp\obj\Debug\ClientTCPApp.csprojAssemblyReference.cache
+c:\users\ewelina\source\repos\ClientTCPApp\ClientTCPApp\obj\Debug\ClientTCPApp.ClientWindow.resources
+c:\users\ewelina\source\repos\ClientTCPApp\ClientTCPApp\obj\Debug\ClientTCPApp.Properties.Resources.resources
+c:\users\ewelina\source\repos\ClientTCPApp\ClientTCPApp\obj\Debug\ClientTCPApp.csproj.GenerateResource.cache
+c:\users\ewelina\source\repos\ClientTCPApp\ClientTCPApp\obj\Debug\ClientTCPApp.csproj.CoreCompileInputs.cache
+c:\users\ewelina\source\repos\ClientTCPApp\ClientTCPApp\bin\Debug\ClientTCPApp.exe.config
+c:\users\ewelina\source\repos\ClientTCPApp\ClientTCPApp\bin\Debug\ClientTCPApp.exe
+c:\users\ewelina\source\repos\ClientTCPApp\ClientTCPApp\bin\Debug\ClientTCPApp.pdb
+c:\users\ewelina\source\repos\ClientTCPApp\ClientTCPApp\obj\Debug\ClientTCPApp.exe
+c:\users\ewelina\source\repos\ClientTCPApp\ClientTCPApp\obj\Debug\ClientTCPApp.pdb

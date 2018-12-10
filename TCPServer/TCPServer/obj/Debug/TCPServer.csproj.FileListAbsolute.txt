@@ -1,0 +1,7 @@
+c:\users\ewelina\source\repos\TCPServer\TCPServer\bin\Debug\TCPServer.exe.config
+c:\users\ewelina\source\repos\TCPServer\TCPServer\bin\Debug\TCPServer.exe
+c:\users\ewelina\source\repos\TCPServer\TCPServer\bin\Debug\TCPServer.pdb
+c:\users\ewelina\source\repos\TCPServer\TCPServer\obj\Debug\TCPServer.csprojAssemblyReference.cache
+c:\users\ewelina\source\repos\TCPServer\TCPServer\obj\Debug\TCPServer.csproj.CoreCompileInputs.cache
+c:\users\ewelina\source\repos\TCPServer\TCPServer\obj\Debug\TCPServer.exe
+c:\users\ewelina\source\repos\TCPServer\TCPServer\obj\Debug\TCPServer.pdb
