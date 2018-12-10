@@ -5,3 +5,10 @@ c:\users\ewelina\source\repos\TCPServer\TCPServer\obj\Debug\TCPServer.csprojAsse
 c:\users\ewelina\source\repos\TCPServer\TCPServer\obj\Debug\TCPServer.csproj.CoreCompileInputs.cache
 c:\users\ewelina\source\repos\TCPServer\TCPServer\obj\Debug\TCPServer.exe
 c:\users\ewelina\source\repos\TCPServer\TCPServer\obj\Debug\TCPServer.pdb
+C:\Users\Ewelina\Documents\Simplechat\TCPServer\TCPServer\bin\Debug\TCPServer.exe.config
+C:\Users\Ewelina\Documents\Simplechat\TCPServer\TCPServer\bin\Debug\TCPServer.exe
+C:\Users\Ewelina\Documents\Simplechat\TCPServer\TCPServer\bin\Debug\TCPServer.pdb
+C:\Users\Ewelina\Documents\Simplechat\TCPServer\TCPServer\obj\Debug\TCPServer.csprojAssemblyReference.cache
+C:\Users\Ewelina\Documents\Simplechat\TCPServer\TCPServer\obj\Debug\TCPServer.csproj.CoreCompileInputs.cache
+C:\Users\Ewelina\Documents\Simplechat\TCPServer\TCPServer\obj\Debug\TCPServer.exe
+C:\Users\Ewelina\Documents\Simplechat\TCPServer\TCPServer\obj\Debug\TCPServer.pdb

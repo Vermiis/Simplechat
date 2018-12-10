@@ -59,7 +59,7 @@ namespace ClientTCPApp
                     connectDone.WaitOne();
 
                     // Send test data to the remote device.  
-                    Send(client, "This is a test PING");
+                    Send(client, "This is a test PING <EOF>");
                     sendDone.WaitOne();
 
                     // Receive the response from the remote device.  
@@ -70,9 +70,6 @@ namespace ClientTCPApp
                     
                    // Console.WriteLine("Response received : {0}", response);
                     Logger.SaveLog("Response received : " + response);
-
-
-
 
                     // Release the socket.  
                     client.Shutdown(SocketShutdown.Both);

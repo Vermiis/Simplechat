@@ -6,15 +6,13 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ClientTCPApp
+namespace TCPServer
 {
     public class Logger
     {
-        
-
 
         private static ReaderWriterLockSlim _readWriteLock = new ReaderWriterLockSlim();
-        private static string logpath = @"C:\\Users\\Ewelina\\Documents\\Simplechat\\ClientTCPApp\\ClientTCPApp\\bin\\Debug\\test.txt";
+        private static string logpath = @"C:\\Users\\Ewelina\\Documents\\Simplechat\\TCPServer\\TCPServer\\bin\\Debug\\test.txt";
 
         public static void WriteToFileThreadSafe(string text, string path)
         {

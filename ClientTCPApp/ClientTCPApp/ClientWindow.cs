@@ -23,12 +23,10 @@ namespace ClientTCPApp
             try 
             {
                 Program.ConnectionData.Port = Int32.Parse(textBoxPort.Text);
-
             }
-            catch (Exception err)
+            catch (Exception)
             {
-                MessageBox.Show("wrong addr" + err.ToString());
-                throw;
+                MessageBox.Show("wrong addr");
             }
             Program.ConnectionData.Nick = textBoxNick.Text;
             Logger.SaveLog("Logging started...");
@@ -36,7 +34,6 @@ namespace ClientTCPApp
             try
             {
                 ClientCode.AsynchronousClient.Start();
-
             }
             catch (Exception)
             {
@@ -60,7 +57,8 @@ namespace ClientTCPApp
 
         private void buttonDisconnect_Click(object sender, EventArgs e)
         {
-           // ClientCode.AsynchronousClient.Disconnect();
+            // ClientCode.AsynchronousClient.Disconnect();
+            labelConnSt.Text = "Disonnected";
         }
     }
 }

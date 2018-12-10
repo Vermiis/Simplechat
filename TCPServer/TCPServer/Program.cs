@@ -28,9 +28,6 @@ public class AsynchronousSocketListener
 
     public static void StartListening()
     {
-        // Establish the local endpoint for the socket.  
-        // The DNS name of the computer  
-        // running the listener is "host.contoso.com".  
      //   IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());
         IPAddress ipAddress = System.Net.IPAddress.Parse("127.0.0.1");
         //ipHostInfo.AddressList[0];
@@ -55,7 +52,8 @@ public class AsynchronousSocketListener
                 Console.WriteLine("Waiting for a connection...");
                 listener.BeginAccept(
                     new AsyncCallback(AcceptCallback),
-                    listener);
+                    listener);                 
+                
 
                 // Wait until a connection is made before continuing.  
                 allDone.WaitOne();
@@ -65,6 +63,8 @@ public class AsynchronousSocketListener
         catch (Exception e)
         {
             Console.WriteLine(e.ToString());
+            
+            
         }
 
         Console.WriteLine("\nPress ENTER to continue...");

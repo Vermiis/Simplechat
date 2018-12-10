@@ -1,0 +1,12 @@
+Logging started...
+Error: System.Net.Sockets.SocketException (0x80004005): Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia 127.0.0.1:123
+   w System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   w System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.ConnectCallback(IAsyncResult ar) w C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 97
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 19
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 25
+Response received : This is a test PING <EOF>
