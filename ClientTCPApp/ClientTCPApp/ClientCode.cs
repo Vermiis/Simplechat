@@ -201,6 +201,12 @@ namespace ClientTCPApp
                // return x;
             }
 
+
+            public static void Disconnect (Socket client)
+            {
+                client.Shutdown(SocketShutdown.Both);
+            }
+
             public static void Start()
             {
                 StartClient(Program.ConnectionData.IP, Program.ConnectionData.Port);
