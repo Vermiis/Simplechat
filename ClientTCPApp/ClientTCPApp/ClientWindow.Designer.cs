@@ -39,6 +39,7 @@
             this.labelPort = new System.Windows.Forms.Label();
             this.labelNick = new System.Windows.Forms.Label();
             this.labelConnSt = new System.Windows.Forms.Label();
+            this.buttonDisconnect = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxIP
@@ -134,11 +135,22 @@
             this.labelConnSt.TabIndex = 10;
             this.labelConnSt.Text = "Disconnected";
             // 
+            // buttonDisconnect
+            // 
+            this.buttonDisconnect.Location = new System.Drawing.Point(675, 72);
+            this.buttonDisconnect.Name = "buttonDisconnect";
+            this.buttonDisconnect.Size = new System.Drawing.Size(75, 23);
+            this.buttonDisconnect.TabIndex = 11;
+            this.buttonDisconnect.Text = "Disconnect";
+            this.buttonDisconnect.UseVisualStyleBackColor = true;
+            this.buttonDisconnect.Click += new System.EventHandler(this.buttonDisconnect_Click);
+            // 
             // ClientWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonDisconnect);
             this.Controls.Add(this.labelConnSt);
             this.Controls.Add(this.labelNick);
             this.Controls.Add(this.labelPort);
@@ -170,6 +182,7 @@
         private System.Windows.Forms.Label labelNick;
         private System.Windows.Forms.Label labelConnSt;
         public System.Windows.Forms.RichTextBox richTextBoxChat;
+        private System.Windows.Forms.Button buttonDisconnect;
     }
 }
 

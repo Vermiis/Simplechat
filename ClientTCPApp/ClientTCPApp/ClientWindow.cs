@@ -19,8 +19,19 @@ namespace ClientTCPApp
         private void buttonConnect_Click(object sender, EventArgs e)
         {
             Program.ConnectionData.IP = textBoxIP.Text;
-            Program.ConnectionData.Port = Int32.Parse(textBoxPort.Text);
+            
+            try 
+            {
+                Program.ConnectionData.Port = Int32.Parse(textBoxPort.Text);
+
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("wrong addr" + err.ToString());
+                throw;
+            }
             Program.ConnectionData.Nick = textBoxNick.Text;
+            Logger.SaveLog("Logging started...");
 
             try
             {
@@ -45,6 +56,11 @@ namespace ClientTCPApp
         public void X()
         {
             richTextBoxChat.Text = "ASD";
+        }
+
+        private void buttonDisconnect_Click(object sender, EventArgs e)
+        {
+           // ClientCode.AsynchronousClient.Disconnect();
         }
     }
 }
