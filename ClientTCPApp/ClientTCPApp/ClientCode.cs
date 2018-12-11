@@ -27,10 +27,7 @@ namespace ClientTCPApp
 
         public class AsynchronousClient
         {
-            // The port number for the remote device.  
-           // private const int port = 11000;
 
-            // ManualResetEvent instances signal completion.  
             private static ManualResetEvent connectDone =
                 new ManualResetEvent(false);
             private static ManualResetEvent sendDone =

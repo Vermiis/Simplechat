@@ -41,6 +41,7 @@
             this.labelConnSt = new System.Windows.Forms.Label();
             this.buttonDisconnect = new System.Windows.Forms.Button();
             this.listViewUsers = new System.Windows.Forms.ListView();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
             // textBoxIP
@@ -195,6 +196,7 @@
         public System.Windows.Forms.RichTextBox richTextBoxChat;
         private System.Windows.Forms.Button buttonDisconnect;
         private System.Windows.Forms.ListView listViewUsers;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
