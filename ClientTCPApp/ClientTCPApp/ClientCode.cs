@@ -23,6 +23,7 @@ namespace ClientTCPApp
             public byte[] buffer = new byte[BufferSize];
             // Received data string.  
             public StringBuilder sb = new StringBuilder();
+            public Messages Msgs = new Messages();
         }
 
         public class AsynchronousClient
