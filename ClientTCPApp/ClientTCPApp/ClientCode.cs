@@ -35,6 +35,7 @@ namespace ClientTCPApp
                 new ManualResetEvent(false);
             private static ManualResetEvent receiveDone =
                 new ManualResetEvent(false);
+            public Messages messages = new Messages();
 
             // The response from the remote device.  
             private static String response = String.Empty;
