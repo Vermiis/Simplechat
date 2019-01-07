@@ -113,8 +113,12 @@ namespace TCPServer
 
                 // Check for end-of-file tag. If it is not there, read   
                 // more data.  
-                content = state.sb.ToString();
-                
+                content = state.sb.ToString();                
+                string[] splitInput = content.Split(new Char[] { ' ' });
+                var nick = splitInput[1];
+                ClientsBuffer.ConnectedUsers.Enqueue(nick);
+
+
                 if (content.IndexOf("<EOF>") > -1)
                 {
                     // All the data has been read from the   

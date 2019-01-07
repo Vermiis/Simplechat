@@ -14,6 +14,7 @@ namespace ClientTCPApp
         public ClientWindow()
         {
             InitializeComponent();
+            backgroundWorker1.DoWork += backgroundWorker1_DoWork;
         }
 
         
@@ -33,15 +34,7 @@ namespace ClientTCPApp
             Program.ConnectionData.Nick = textBoxNick.Text;
             Logger.SaveLog("Logging started...");
 
-            try
-            {
-                ClientCode.AsynchronousClient.Start();
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
+            backgroundWorker1.RunWorkerAsync();
 
             if (Program.ConnectionData.Connected)
             {
@@ -56,11 +49,27 @@ namespace ClientTCPApp
         {
             // ClientCode.AsynchronousClient.Disconnect();
             labelConnSt.Text = "Disonnected";
+            Messages.InternalCommands.Enqueue("DC");
         }
 
         private void buttonSend_Click(object sender, EventArgs e)
         {
-            string message = richTextBoxMessage.Text;           
+            string message = richTextBoxMessage.Text;
+            Messages.messagesToSend.Enqueue(message);
+            
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            try
+            {
+                ClientCode.AsynchronousClient.Start();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

@@ -50,6 +50,7 @@
             this.textBoxIP.Name = "textBoxIP";
             this.textBoxIP.Size = new System.Drawing.Size(131, 20);
             this.textBoxIP.TabIndex = 0;
+            this.textBoxIP.Text = "127.0.0.1";
             // 
             // textBoxPort
             // 
@@ -57,6 +58,7 @@
             this.textBoxPort.Name = "textBoxPort";
             this.textBoxPort.Size = new System.Drawing.Size(100, 20);
             this.textBoxPort.TabIndex = 1;
+            this.textBoxPort.Text = "11000";
             // 
             // richTextBoxChat
             // 
@@ -73,7 +75,7 @@
             this.richTextBoxMessage.Name = "richTextBoxMessage";
             this.richTextBoxMessage.Size = new System.Drawing.Size(599, 66);
             this.richTextBoxMessage.TabIndex = 3;
-            this.richTextBoxMessage.Text = "";
+            this.richTextBoxMessage.Text = "test";
             // 
             // buttonConnect
             // 
@@ -101,6 +103,7 @@
             this.textBoxNick.Name = "textBoxNick";
             this.textBoxNick.Size = new System.Drawing.Size(100, 20);
             this.textBoxNick.TabIndex = 6;
+            this.textBoxNick.Text = "Vermiis";
             // 
             // labelIP
             // 
@@ -155,6 +158,10 @@
             this.listViewUsers.Size = new System.Drawing.Size(121, 229);
             this.listViewUsers.TabIndex = 12;
             this.listViewUsers.UseCompatibleStateImageBehavior = false;
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
             // ClientWindow
             // 

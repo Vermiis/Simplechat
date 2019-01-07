@@ -12,3 +12,10 @@ C:\Users\Ewelina\Documents\Simplechat\TCPServer\TCPServer\obj\Debug\TCPServer.cs
 C:\Users\Ewelina\Documents\Simplechat\TCPServer\TCPServer\obj\Debug\TCPServer.csproj.CoreCompileInputs.cache
 C:\Users\Ewelina\Documents\Simplechat\TCPServer\TCPServer\obj\Debug\TCPServer.exe
 C:\Users\Ewelina\Documents\Simplechat\TCPServer\TCPServer\obj\Debug\TCPServer.pdb
+C:\Users\user\Documents\Simplechat2\TCPServer\TCPServer\obj\Debug\TCPServer.csprojAssemblyReference.cache
+C:\Users\user\Documents\Simplechat2\TCPServer\TCPServer\obj\Debug\TCPServer.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Simplechat2\TCPServer\TCPServer\obj\Debug\TCPServer.pdb
+C:\Users\user\Documents\Simplechat2\TCPServer\TCPServer\bin\Debug\TCPServer.exe.config
+C:\Users\user\Documents\Simplechat2\TCPServer\TCPServer\bin\Debug\TCPServer.exe
+C:\Users\user\Documents\Simplechat2\TCPServer\TCPServer\bin\Debug\TCPServer.pdb
+C:\Users\user\Documents\Simplechat2\TCPServer\TCPServer\obj\Debug\TCPServer.exe

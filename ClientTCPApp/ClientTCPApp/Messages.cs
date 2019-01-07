@@ -9,7 +9,7 @@ namespace ClientTCPApp
 {
     public class Messages
     {
-        public ConcurrentQueue<string> messagesToSend = new ConcurrentQueue<string>();
-        public ConcurrentQueue<string> messagesReceived = new ConcurrentQueue<string>();
+        public static ConcurrentQueue<string> messagesToSend = new ConcurrentQueue<string>();
+        public static ConcurrentQueue<string> messagesReceived = new ConcurrentQueue<string>();
     }
 }

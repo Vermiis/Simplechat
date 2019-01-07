@@ -10,3 +10,103 @@ Logging started...
 Socket connected to 127.0.0.1:11000
 Sent {0} bytes to server. 25
 Response received : This is a test PING <EOF>
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 25
+Got data from server: 
+Response received : This is a test PING <EOF>
+Logging started...
+Sent {0} bytes to server. 25
+Got data from server: 
+Socket connected to 127.0.0.1:11000
+Response received : This is a test PING <EOF>
+Logging started...
+Sent {0} bytes to server. 25
+Got data from server: 
+Socket connected to 127.0.0.1:11000
+Response received : This is a test PING <EOF>
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 25
+Got data from server: 
+Response received : This is a test PING <EOF>
+Logging started...
+Got data from server: 
+Response received : This is a test PING <EOF>
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult, SocketError& errorCode)
+   w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.SendCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 192
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   w System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.ConnectCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 96
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult, SocketError& errorCode)
+   w System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.ReceiveCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 144
+Logging started...
+Got data from server: 
+Response received : This is a test PING <EOF>
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult, SocketError& errorCode)
+   w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.SendCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 192
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult, SocketError& errorCode)
+   w System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.ReceiveCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 144
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   w System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.ConnectCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 96
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 25
+Got data from server: 
+Response received : This is a test PING <EOF>
+Logging started...
+Got data from server: 
+Response received : This is a test PING <EOF>
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   w System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.ConnectCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 96
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult, SocketError& errorCode)
+   w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.SendCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 192
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult, SocketError& errorCode)
+   w System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.ReceiveCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 144
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 32
+Got data from server: 
+Response received : This is a test PINGVermiis <EOF>
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 22
+Got data from server: 
+Response received : NICKVermiis MSG  <EOF>
+Got data from server: 
+Sent {0} bytes to server. 22
+Socket connected to 127.0.0.1:11000
+Response received : NICKVermiis MSG  <EOF>
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Error: System.Net.Sockets.SocketException (0x80004005): Istniejące połączenie zostało gwałtownie zamknięte przez zdalnego hosta
+   w System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.ReceiveCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 144

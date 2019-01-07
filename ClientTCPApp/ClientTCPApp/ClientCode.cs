@@ -35,7 +35,7 @@ namespace ClientTCPApp
                 new ManualResetEvent(false);
             private static ManualResetEvent receiveDone =
                 new ManualResetEvent(false);
-            public Messages messages = new Messages();
+          //  public Messages ClientMessages = new Messages();
 
             // The response from the remote device.  
             private static String response = String.Empty;
@@ -45,7 +45,7 @@ namespace ClientTCPApp
                 // Connect to a remote device.  
                 try
                 {
-
+                    
                     //IPHostEntry ipHostInfo = Dns.GetHostEntry("");
 
                     IPAddress ipAddress = System.Net.IPAddress.Parse(ipAddr);
@@ -61,7 +61,7 @@ namespace ClientTCPApp
                     connectDone.WaitOne();
 
                     // Send test data to the remote device.  
-                    Send(client, "This is a test PING <EOF>");
+                    Send(client, "NICK " + Program.ConnectionData.Nick + " MSG " +  " <EOF>");
                     sendDone.WaitOne();
 
                     // Receive the response from the remote device.  
@@ -74,8 +74,12 @@ namespace ClientTCPApp
                     Logger.SaveLog("Response received : " + response);
 
                     // Release the socket.  
-                    client.Shutdown(SocketShutdown.Both);
-                    client.Close();
+                    if (Messages.InternalCommands[0] == "DC")
+                    {
+                        client.Shutdown(SocketShutdown.Both);
+                        client.Close();
+                    }
+                    
 
                 }
                 catch (Exception e)

@@ -18,3 +18,13 @@ C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\obj\Debug\Client
 C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\bin\Debug\ClientTCPApp.exe.config
 C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\bin\Debug\ClientTCPApp.exe
 C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\bin\Debug\ClientTCPApp.pdb
+C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\bin\Debug\ClientTCPApp.exe.config
+C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\bin\Debug\ClientTCPApp.exe
+C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\bin\Debug\ClientTCPApp.pdb
+C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\obj\Debug\ClientTCPApp.csprojAssemblyReference.cache
+C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\obj\Debug\ClientTCPApp.ClientWindow.resources
+C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\obj\Debug\ClientTCPApp.Properties.Resources.resources
+C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\obj\Debug\ClientTCPApp.csproj.GenerateResource.cache
+C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\obj\Debug\ClientTCPApp.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\obj\Debug\ClientTCPApp.exe
+C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\obj\Debug\ClientTCPApp.pdb
