@@ -239,3 +239,129 @@ Nazwa obiektu: 'System.Net.Sockets.Socket'.
    w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult, SocketError& errorCode)
    w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult)
    w ClientTCPApp.ClientCode.AsynchronousClient.SendCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 197
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Error: System.ArgumentOutOfRangeException: Indeks był spoza zakresu. Musi mieć wartość nieujemną i mniejszą niż rozmiar kolekcji.
+Nazwa parametru: index
+   w System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   w System.Collections.Generic.List`1.get_Item(Int32 index)
+   w ClientTCPApp.ClientCode.AsynchronousClient.StartClient(String ipAddr, Int32 port) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 93
+Got data from server: 
+Sent {0} bytes to server. 23
+Socket connected to 127.0.0.1:11000
+Response received : NICK Vermiis MSG  <EOF>
+Error: System.ArgumentOutOfRangeException: Indeks był spoza zakresu. Musi mieć wartość nieujemną i mniejszą niż rozmiar kolekcji.
+Nazwa parametru: index
+   w System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   w System.Collections.Generic.List`1.get_Item(Int32 index)
+   w ClientTCPApp.ClientCode.AsynchronousClient.StartClient(String ipAddr, Int32 port) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 93
+Logging started...
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Sent {0} bytes to server. 23
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 27
+Error: System.Net.Sockets.SocketException (0x80004005): Istniejące połączenie zostało gwałtownie zamknięte przez zdalnego hosta
+   w System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.ReceiveCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 173
+Error: System.Net.Sockets.SocketException (0x80004005): Istniejące połączenie zostało gwałtownie zamknięte przez zdalnego hosta
+   w System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Receive(Socket client) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 144
+Error: System.ArgumentOutOfRangeException: Indeks był spoza zakresu. Musi mieć wartość nieujemną i mniejszą niż rozmiar kolekcji.
+Nazwa parametru: index
+   w System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   w System.Collections.Generic.List`1.get_Item(Int32 index)
+   w ClientTCPApp.ClientCode.AsynchronousClient.StartClient(String ipAddr, Int32 port) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 93
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Error: System.ArgumentOutOfRangeException: Indeks był spoza zakresu. Musi mieć wartość nieujemną i mniejszą niż rozmiar kolekcji.
+Nazwa parametru: index
+   w System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   w System.Collections.Generic.List`1.get_Item(Int32 index)
+   w ClientTCPApp.ClientCode.AsynchronousClient.StartClient(String ipAddr, Int32 port) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 93
+Logging started...
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 24
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Error: System.Net.Sockets.SocketException (0x80004005): Żądanie wysłania lub odebrania danych zostało zablokowane, ponieważ gniazdo nie jest podłączone i (podczas wysyłania przez gniazdo datagramu przy użyciu wywołania „wyślij do”) nie podano adresu
+   w System.Net.Sockets.Socket.Shutdown(SocketShutdown how)
+   w ClientTCPApp.ClientCode.AsynchronousClient.StartClient(String ipAddr, Int32 port) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 96
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult, SocketError& errorCode)
+   w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.SendCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 213
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult, SocketError& errorCode)
+   w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.SendCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 213
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult, SocketError& errorCode)
+   w System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.ReceiveCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 165
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Error: System.ArgumentOutOfRangeException: Indeks był spoza zakresu. Musi mieć wartość nieujemną i mniejszą niż rozmiar kolekcji.
+Nazwa parametru: index
+   w System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   w System.Collections.Generic.List`1.get_Item(Int32 index)
+   w ClientTCPApp.ClientCode.AsynchronousClient.StartClient(String ipAddr, Int32 port) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 93
+Socket connected to 127.0.0.1:11000
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Sent {0} bytes to server. 23
+Error: System.ArgumentOutOfRangeException: Indeks był spoza zakresu. Musi mieć wartość nieujemną i mniejszą niż rozmiar kolekcji.
+Nazwa parametru: index
+   w System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   w System.Collections.Generic.List`1.get_Item(Int32 index)
+   w ClientTCPApp.ClientCode.AsynchronousClient.StartClient(String ipAddr, Int32 port) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 93
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Sent {0} bytes to server. 27
+Error: System.Net.Sockets.SocketException (0x80004005): Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+   w System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Receive(Socket client) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 149
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Sent {0} bytes to server. 27
+Error: System.Net.Sockets.SocketException (0x80004005): Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+   w System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Receive(Socket client) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 149
+Logging started...
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Got data from server: 
+Sent {0} bytes to server. 23
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 24
+Sent {0} bytes to server. 27
+Sent {0} bytes to server. 23
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 24
+Logging started...
+Error: System.Net.Sockets.SocketException (0x80004005): Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia 127.0.0.1:11000
+   w System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   w System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.ConnectCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 122

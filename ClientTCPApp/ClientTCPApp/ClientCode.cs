@@ -11,7 +11,7 @@ namespace ClientTCPApp
    public class ClientCode
     {
 
-        private String[] messagequeue;
+       // private String[] messagequeue;
 
         public class StateObject
         {
@@ -23,7 +23,7 @@ namespace ClientTCPApp
             public byte[] buffer = new byte[BufferSize];
             // Received data string.  
             public StringBuilder sb = new StringBuilder();
-            public Messages Msgs = new Messages();
+            
         }
 
         public class AsynchronousClient
@@ -39,6 +39,9 @@ namespace ClientTCPApp
 
             // The response from the remote device.  
             private static String response = String.Empty;
+            // public Messages Msgs = new Messages();
+            private static string messageToSend = String.Empty;
+            
 
             public static void StartClient( string ipAddr, int port)
             {
@@ -50,6 +53,7 @@ namespace ClientTCPApp
 
                     IPAddress ipAddress = System.Net.IPAddress.Parse(ipAddr);
                     IPEndPoint remoteEP = new IPEndPoint(ipAddress, port);
+
 
                     // Create a TCP/IP socket.  
                     Socket client = new Socket(ipAddress.AddressFamily,
@@ -67,19 +71,36 @@ namespace ClientTCPApp
                     // Receive the response from the remote device.  
                     Receive(client);
                     receiveDone.WaitOne();
+                    
 
                     // Write the response to the console.  
                     
                    // Console.WriteLine("Response received : {0}", response);
                     Logger.SaveLog("Response received : " + response);
-
-                    // Release the socket.  
-                    if (Messages.InternalCommands[0] == "DC")
+                    do
                     {
-                        Send(client, "NICK " + Program.ConnectionData.Nick + " QUIT " + " <EOF>");
-                        client.Shutdown(SocketShutdown.Both);
-                        client.Close();
-                    }
+                        while (Messages.messagesToSend.TryDequeue(out messageToSend))
+                        {
+                            Send(client, "NICK " + Program.ConnectionData.Nick + " MSG " + messageToSend + " <EOF>");
+                            sendDone.WaitOne();
+
+                            // Receive the response from the remote device.  
+                            Receive(client);
+                            receiveDone.WaitOne();
+                        }
+
+
+                        if (Messages.InternalCommands.Contains("DC"))
+                        {
+                            Send(client, "NICK " + Program.ConnectionData.Nick + " QUIT " + " <EOF>");
+                            client.Shutdown(SocketShutdown.Both);
+                            client.Close();
+                        }
+
+                    } while (client.Connected);
+
+                    // Release the socket. 
+                  
                     
 
                 }
