@@ -49,7 +49,7 @@ namespace ClientTCPApp
         {
             // ClientCode.AsynchronousClient.Disconnect();
             labelConnSt.Text = "Disonnected";
-            Messages.InternalCommands.Enqueue("DC");
+            Messages.InternalCommands.Add("DC");
         }
 
         private void buttonSend_Click(object sender, EventArgs e)

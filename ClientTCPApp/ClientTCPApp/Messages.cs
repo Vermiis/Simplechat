@@ -11,5 +11,6 @@ namespace ClientTCPApp
     {
         public static ConcurrentQueue<string> messagesToSend = new ConcurrentQueue<string>();
         public static ConcurrentQueue<string> messagesReceived = new ConcurrentQueue<string>();
+        public static List<string> InternalCommands = new List<string>();
     }
 }

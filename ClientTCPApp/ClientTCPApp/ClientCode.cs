@@ -76,6 +76,7 @@ namespace ClientTCPApp
                     // Release the socket.  
                     if (Messages.InternalCommands[0] == "DC")
                     {
+                        Send(client, "NICK " + Program.ConnectionData.Nick + " QUIT " + " <EOF>");
                         client.Shutdown(SocketShutdown.Both);
                         client.Close();
                     }

@@ -9,6 +9,6 @@ namespace TCPServer
 {
     class ClientsBuffer
     {
-        public ConcurrentQueue<string> ConnectedUsers = new ConcurrentQueue<string>();
+        public static ConcurrentQueue<string> ConnectedUsers = new ConcurrentQueue<string>();
     }
 }

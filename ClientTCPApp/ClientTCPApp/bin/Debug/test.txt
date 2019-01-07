@@ -110,3 +110,132 @@ Got data from server:
 Error: System.Net.Sockets.SocketException (0x80004005): Istniejące połączenie zostało gwałtownie zamknięte przez zdalnego hosta
    w System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
    w ClientTCPApp.ClientCode.AsynchronousClient.ReceiveCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 144
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Error: System.ArgumentOutOfRangeException: Indeks był spoza zakresu. Musi mieć wartość nieujemną i mniejszą niż rozmiar kolekcji.
+Nazwa parametru: index
+   w System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   w System.Collections.Generic.List`1.get_Item(Int32 index)
+   w ClientTCPApp.ClientCode.AsynchronousClient.StartClient(String ipAddr, Int32 port) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 77
+Socket connected to 127.0.0.1:11000
+Got data from server: 
+Sent {0} bytes to server. 23
+Response received : NICK Vermiis MSG  <EOF>
+Error: System.ArgumentOutOfRangeException: Indeks był spoza zakresu. Musi mieć wartość nieujemną i mniejszą niż rozmiar kolekcji.
+Nazwa parametru: index
+   w System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   w System.Collections.Generic.List`1.get_Item(Int32 index)
+   w ClientTCPApp.ClientCode.AsynchronousClient.StartClient(String ipAddr, Int32 port) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 77
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Error: System.ArgumentOutOfRangeException: Indeks był spoza zakresu. Musi mieć wartość nieujemną i mniejszą niż rozmiar kolekcji.
+Nazwa parametru: index
+   w System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   w System.Collections.Generic.List`1.get_Item(Int32 index)
+   w ClientTCPApp.ClientCode.AsynchronousClient.StartClient(String ipAddr, Int32 port) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 77
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Error: System.ArgumentOutOfRangeException: Indeks był spoza zakresu. Musi mieć wartość nieujemną i mniejszą niż rozmiar kolekcji.
+Nazwa parametru: index
+   w System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   w System.Collections.Generic.List`1.get_Item(Int32 index)
+   w ClientTCPApp.ClientCode.AsynchronousClient.StartClient(String ipAddr, Int32 port) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 77
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Error: System.ArgumentOutOfRangeException: Indeks był spoza zakresu. Musi mieć wartość nieujemną i mniejszą niż rozmiar kolekcji.
+Nazwa parametru: index
+   w System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   w System.Collections.Generic.List`1.get_Item(Int32 index)
+   w ClientTCPApp.ClientCode.AsynchronousClient.StartClient(String ipAddr, Int32 port) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 77
+Got data from server: 
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Response received : NICK Vermiis MSG  <EOF>
+Error: System.ArgumentOutOfRangeException: Indeks był spoza zakresu. Musi mieć wartość nieujemną i mniejszą niż rozmiar kolekcji.
+Nazwa parametru: index
+   w System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   w System.Collections.Generic.List`1.get_Item(Int32 index)
+   w ClientTCPApp.ClientCode.AsynchronousClient.StartClient(String ipAddr, Int32 port) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 77
+Logging started...
+Sent {0} bytes to server. 23
+Socket connected to 127.0.0.1:11000
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Error: System.ArgumentOutOfRangeException: Indeks był spoza zakresu. Musi mieć wartość nieujemną i mniejszą niż rozmiar kolekcji.
+Nazwa parametru: index
+   w System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   w System.Collections.Generic.List`1.get_Item(Int32 index)
+   w ClientTCPApp.ClientCode.AsynchronousClient.StartClient(String ipAddr, Int32 port) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 77
+Socket connected to 127.0.0.1:11000
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Error: System.ArgumentOutOfRangeException: Indeks był spoza zakresu. Musi mieć wartość nieujemną i mniejszą niż rozmiar kolekcji.
+Nazwa parametru: index
+   w System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   w System.Collections.Generic.List`1.get_Item(Int32 index)
+   w ClientTCPApp.ClientCode.AsynchronousClient.StartClient(String ipAddr, Int32 port) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 77
+Sent {0} bytes to server. 23
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Sent {0} bytes to server. 24
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult, SocketError& errorCode)
+   w System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.ReceiveCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 149
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult, SocketError& errorCode)
+   w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.SendCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 197
+Logging started...
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Got data from server: 
+Socket connected to 127.0.0.1:11000
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Response received : NICK Vermiis MSG  <EOF>
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult, SocketError& errorCode)
+   w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.SendCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 197
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult, SocketError& errorCode)
+   w System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.ReceiveCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 149
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult, SocketError& errorCode)
+   w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.SendCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 197
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult, SocketError& errorCode)
+   w System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.ReceiveCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 149
+Error: System.ObjectDisposedException: Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'System.Net.Sockets.Socket'.
+   w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult, SocketError& errorCode)
+   w System.Net.Sockets.Socket.EndSend(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.SendCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 197
