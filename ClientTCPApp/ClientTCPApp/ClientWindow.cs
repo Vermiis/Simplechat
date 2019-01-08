@@ -39,17 +39,17 @@ namespace ClientTCPApp
             if (Program.ConnectionData.Connected)
             {
                 labelConnSt.Text = "Connected";
-            }
-            
-            
-
+                buttonConnect.Enabled = false;
+            }            
         }
 
         private void buttonDisconnect_Click(object sender, EventArgs e)
-        {
-            // ClientCode.AsynchronousClient.Disconnect();
-            labelConnSt.Text = "Disonnected";
+        {       
             Messages.InternalCommands.Add("DC");
+            if (!Program.ConnectionData.Connected)
+            {
+                labelConnSt.Text = "Disonnected";
+            }
         }
 
         private void buttonSend_Click(object sender, EventArgs e)

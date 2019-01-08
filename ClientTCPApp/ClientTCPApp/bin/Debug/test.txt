@@ -365,3 +365,147 @@ Error: System.Net.Sockets.SocketException (0x80004005): Nie można nawiązać po
    w System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
    w System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
    w ClientTCPApp.ClientCode.AsynchronousClient.ConnectCallback(IAsyncResult ar) w C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 122
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Logging started...
+Logging started...
+Error: System.Net.Sockets.SocketException (0x80004005): Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia 127.0.0.1:11000
+   w System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   w System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   w ClientTCPApp.ClientCode.AsynchronousClient.ConnectCallback(IAsyncResult ar) w C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 126
+Logging started...
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Logging started...
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Sent {0} bytes to server. 27
+Error: System.Net.Sockets.SocketException (0x80004005): Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+   w System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Receive(Socket client) w C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 153
+Socket connected to 127.0.0.1:11000
+Got data from server: 
+Sent {0} bytes to server. 23
+Response received : NICK Vermiis MSG  <EOF>
+Sent {0} bytes to server. 27
+Error: System.Net.Sockets.SocketException (0x80004005): Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+   w System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Receive(Socket client) w C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 153
+Logging started...
+Got data from server: 
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Response received : NICK Vermiis MSG  <EOF>
+Sent {0} bytes to server. 27
+Error: System.Net.Sockets.SocketException (0x80004005): Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+   w System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Receive(Socket client) w C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 153
+Error: System.Net.Sockets.SocketException (0x80004005): Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+   w System.Net.Sockets.Socket.BeginSend(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Send(Socket client, String data) w C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 208
+   w ClientTCPApp.ClientCode.AsynchronousClient.StartClient(String ipAddr, Int32 port) w C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 89
+Socket connected to 127.0.0.1:11000
+Got data from server: 
+Sent {0} bytes to server. 23
+Response received : NICK Vermiis MSG  <EOF>
+Sent {0} bytes to server. 27
+Error: System.Net.Sockets.SocketException (0x80004005): Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+   w System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Receive(Socket client) w C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 153
+Error: System.Net.Sockets.SocketException (0x80004005): Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+   w System.Net.Sockets.Socket.BeginSend(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Send(Socket client, String data) w C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 208
+   w ClientTCPApp.ClientCode.AsynchronousClient.StartClient(String ipAddr, Int32 port) w C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 89
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Sent {0} bytes to server. 24
+Error: System.Net.Sockets.SocketException (0x80004005): Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+   w System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Receive(Socket client) w C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 162
+Response received : NICK Vermiis MSG  <EOF>
+Socket connected to 127.0.0.1:11000
+Got data from server: 
+Sent {0} bytes to server. 23
+Sent {0} bytes to server. 24
+Error: System.Net.Sockets.SocketException (0x80004005): Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+   w System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Receive(Socket client) w C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 162
+Response received : NICK Vermiis MSG  <EOF>
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Sent {0} bytes to server. 24
+Error: System.Net.Sockets.SocketException (0x80004005): Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+   w System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Receive(Socket client) w C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 162
+Response received : NICK Vermiis MSG  <EOF>
+Got data from server: 
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Sent {0} bytes to server. 24
+Error: System.Net.Sockets.SocketException (0x80004005): Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+   w System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Receive(Socket client) w C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 162
+Response received : NICK Vermiis MSG  <EOF>
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Sent {0} bytes to server. 24
+Error: System.Net.Sockets.SocketException (0x80004005): Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+   w System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Receive(Socket client)
+Response received : NICK Vermiis MSG  <EOF>
+Socket connected to 127.0.0.1:11000
+Got data from server: 
+Sent {0} bytes to server. 23
+Sent {0} bytes to server. 24
+Error: System.Net.Sockets.SocketException (0x80004005): Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+   w System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Receive(Socket client)
+Response received : NICK Vermiis MSG  <EOF>
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 24
+Got data from server: 
+Sent {0} bytes to server. 25
+Error: System.Net.Sockets.SocketException (0x80004005): Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+   w System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Receive(Socket client)
+Response received : NICK Vermiis2 MSG  <EOF>
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 24
+Got data from server: 
+Sent {0} bytes to server. 25
+Error: System.Net.Sockets.SocketException (0x80004005): Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+   w System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Receive(Socket client)
+Response received : NICK Vermiis2 MSG  <EOF>
+Logging started...
+Socket connected to 127.0.0.1:11000
+Sent {0} bytes to server. 23
+Got data from server: 
+Response received : NICK Vermiis MSG  <EOF>
+Sent {0} bytes to server. 24
+Error: System.Net.Sockets.SocketException (0x80004005): Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+   w System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Receive(Socket client) w C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 155
+Socket connected to 127.0.0.1:11000
+Got data from server: 
+Sent {0} bytes to server. 23
+Response received : NICK Vermiis MSG  <EOF>
+Sent {0} bytes to server. 24
+Error: System.Net.Sockets.SocketException (0x80004005): Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+   w System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   w ClientTCPApp.ClientCode.AsynchronousClient.Receive(Socket client) w C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\ClientCode.cs:wiersz 155

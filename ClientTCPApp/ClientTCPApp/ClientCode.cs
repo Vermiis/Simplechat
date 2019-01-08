@@ -4,14 +4,15 @@ using System.Net.Sockets;
 using System.Threading;
 using System.Text;
 using ClientTCPApp;
+using System.Timers;
 
 // State object for receiving data from remote device.  
 namespace ClientTCPApp
 {
    public class ClientCode
-    {
+    {       
 
-       // private String[] messagequeue;
+        // private String[] messagequeue;
 
         public class StateObject
         {
@@ -39,13 +40,14 @@ namespace ClientTCPApp
 
             // The response from the remote device.  
             private static String response = String.Empty;
-            // public Messages Msgs = new Messages();
+            // message to send
             private static string messageToSend = String.Empty;
-            
+           
 
             public static void StartClient( string ipAddr, int port)
             {
                 // Connect to a remote device.  
+
                 try
                 {
                     
@@ -64,6 +66,11 @@ namespace ClientTCPApp
                         new AsyncCallback(ConnectCallback), client);
                     connectDone.WaitOne();
 
+                    //**
+
+
+                    //**
+
                     // Send test data to the remote device.  
                     Send(client, "NICK " + Program.ConnectionData.Nick + " MSG " +  " <EOF>");
                     sendDone.WaitOne();
@@ -71,14 +78,16 @@ namespace ClientTCPApp
                     // Receive the response from the remote device.  
                     Receive(client);
                     receiveDone.WaitOne();
-                    
-
-                    // Write the response to the console.  
-                    
-                   // Console.WriteLine("Response received : {0}", response);
+                                
                     Logger.SaveLog("Response received : " + response);
-                    do
+                    while (true)
                     {
+
+                        SendPing(client, "NICK " + Program.ConnectionData.Nick + " PING " + " <EOF>");
+                        sendDone.WaitOne();
+                        Receive(client);
+                        receiveDone.WaitOne();
+
                         while (Messages.messagesToSend.TryDequeue(out messageToSend))
                         {
                             Send(client, "NICK " + Program.ConnectionData.Nick + " MSG " + messageToSend + " <EOF>");
@@ -97,11 +106,8 @@ namespace ClientTCPApp
                             client.Close();
                         }
 
-                    } while (client.Connected);
-
-                    // Release the socket. 
-                  
-                    
+                    } ;
+                                   
 
                 }
                 catch (Exception e)
@@ -204,6 +210,19 @@ namespace ClientTCPApp
                 client.BeginSend(byteData, 0, byteData.Length, 0,
                     new AsyncCallback(SendCallback), client);
             }
+
+            private static void SendPing(Socket client, String pingmsg)
+            {
+                // Convert the string data to byte data using ASCII encoding.  
+                byte[] byteData = Encoding.ASCII.GetBytes(pingmsg);
+
+                // Begin sending the data to the remote device.  
+                client.BeginSend(byteData, 0, byteData.Length, 0,
+                    new AsyncCallback(SendCallback), client);
+
+            }
+
+
 
             private static void SendCallback(IAsyncResult ar)
             {
