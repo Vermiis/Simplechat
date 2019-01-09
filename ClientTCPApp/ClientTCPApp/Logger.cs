@@ -14,7 +14,7 @@ namespace ClientTCPApp
 
 
         private static ReaderWriterLockSlim _readWriteLock = new ReaderWriterLockSlim();
-        private static string logpath = @"C:\Users\Ewelina\Documents\Simplechat\ClientTCPApp\ClientTCPApp\bin\Debug\\test.txt";
+        private static string logpath = @"C:\Users\user\Documents\Simplechat2\ClientTCPApp\ClientTCPApp\bin\Debug\\test.txt";
 
         public static void WriteToFileThreadSafe(string text, string path)
         {

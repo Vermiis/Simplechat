@@ -67,17 +67,15 @@ namespace ClientTCPApp
                     connectDone.WaitOne();
 
                     //**
-
-
                     //**
 
-                    // Send test data to the remote device.  
-                    Send(client, "NICK " + Program.ConnectionData.Nick + " MSG " +  " <EOF>");
+                    // Send hello data to the remote device.  
+                    Send(client, "NICK " + Program.ConnectionData.Nick + " HELLO " +  " <EOF>");
                     sendDone.WaitOne();
 
                     // Receive the response from the remote device.  
                     Receive(client);
-                    receiveDone.WaitOne();
+                   // receiveDone.WaitOne();
                                 
                     Logger.SaveLog("Response received : " + response);
                     while (true)

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows.Forms;
 namespace ClientTCPApp
 {
@@ -15,7 +16,10 @@ namespace ClientTCPApp
         {
             InitializeComponent();
             backgroundWorker1.DoWork += backgroundWorker1_DoWork;
+            backgroundWorker2.DoWork += backgroundWorker2_DoWork;
         }
+
+
 
         
 
@@ -35,21 +39,15 @@ namespace ClientTCPApp
             Logger.SaveLog("Logging started...");
 
             backgroundWorker1.RunWorkerAsync();
+            backgroundWorker2.RunWorkerAsync();
 
-            if (Program.ConnectionData.Connected)
-            {
-                labelConnSt.Text = "Connected";
-                buttonConnect.Enabled = false;
-            }            
+
         }
 
         private void buttonDisconnect_Click(object sender, EventArgs e)
         {       
             Messages.InternalCommands.Add("DC");
-            if (!Program.ConnectionData.Connected)
-            {
-                labelConnSt.Text = "Disonnected";
-            }
+            
         }
 
         private void buttonSend_Click(object sender, EventArgs e)
@@ -70,6 +68,41 @@ namespace ClientTCPApp
 
                 throw;
             }
+        }
+
+
+
+        public void HandleTimerElapsedConnectionState(object sender, ElapsedEventArgs e)
+        {
+            if (Program.ConnectionData.Connected)
+            {
+
+                labelConnSt.Invoke((MethodInvoker)delegate
+                {
+                    labelConnSt.Text = "Connected";
+                });
+                
+               // buttonConnect.Enabled = false;
+            }
+            else if (!Program.ConnectionData.Connected)
+            {
+                labelConnSt.Invoke((MethodInvoker)delegate
+                {
+                    labelConnSt.Text = "Disonnected";
+                });
+                
+            }
+        }
+
+        private void backgroundWorker2_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+            var timer = new System.Timers.Timer(500);
+            timer.Elapsed += HandleTimerElapsedConnectionState;
+            timer.Enabled = true;
+
+
+           
         }
     }
 }

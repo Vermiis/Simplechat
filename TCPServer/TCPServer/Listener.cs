@@ -117,6 +117,10 @@ namespace TCPServer
                 string[] splitInput = content.Split(new Char[] { ' ' });
                 var nick = splitInput[1];
                 ClientsBuffer.ConnectedUsers.Enqueue(nick);
+                if (content.Contains("PING"))
+                {
+                    Send(handler, "PONG " + content);
+                }
 
 
                 if (content.IndexOf("<EOF>") > -1)
@@ -127,6 +131,7 @@ namespace TCPServer
                         content.Length, content);
                     // Echo the data back to the client.  
                     Send(handler, content);
+                   // Send(handler, ClientsBuffer.ConnectedUsers.ToString());
                 }
                 else
                 {
